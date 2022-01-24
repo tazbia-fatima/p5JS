@@ -25,13 +25,13 @@ function draw() {
   //fill(155, 200, 100);
   noFill();
   let minuteAngle = map(mn, 0, 60, 0, 360);
-   arc(0, 0, 280, 280, 0, minuteAngle, CHORD);
+   arc(0, 0, 280, 280, 0, minuteAngle, PIE);
 
   stroke(255, 255, 50);
   //fill(255, 255, 50);
   noFill();
   let hourAngle = map(hr % 12, 0, 12, 0, 360);
-  arc(0, 0, 300, 300, 0, hourAngle, PIE);
+  arc(0, 0, 300, 300, 0, hourAngle, CHORD);
   
   if(mn % 10 == 0)
     print("The value of minute is"+mn); 
